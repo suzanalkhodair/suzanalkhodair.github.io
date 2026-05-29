@@ -31,7 +31,7 @@ hugoblox:
   # THEME
   # Color and visual design system
   # ────────────────────────────────────────────────────────────────────────────
-  theme:
+  theme: 'emerald'
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
