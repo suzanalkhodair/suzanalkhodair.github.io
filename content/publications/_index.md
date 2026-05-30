@@ -1,12 +1,11 @@
 ---
-title: Publications
-cms_exclude: true
+title: Homepage
+type: landing
 
-# View.
-view: citation
-
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+sections:
+  - block: about.biography
+    id: about
+    content:
+      # This tells Hugo to pull details from content/authors/_index.md
+      username: authors
 ---
