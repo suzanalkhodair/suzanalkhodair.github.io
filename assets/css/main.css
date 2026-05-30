@@ -3785,18 +3785,5 @@ input, select, textarea {
 			}
 
 		}
-/* FORCE ENTIRE SITE BACKGROUND */
-html, body, #wrapper, .main, #intro {
-	background-color: #595349 !important; /* Fallback dark tone */
-	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #fcf9f2 15%, #595349 85%) !important;
-	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #fcf9f2 15%, #595349 85%) !important;
-	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #fcf9f2 15%, #595349 85%) !important;
-	background-image: url("images/overlay.png"), linear-gradient(45deg, #fcf9f2 15%, #595349 85%) !important;
-	color: #333333 !important; /* Forces your text to be dark gray and highly readable */
-}
 
-/* Fix text colors inside headings so they are legible against the warm ivory */
-h1, h2, h3, h4, h5, h6, strong {
-	color: #222222 !important; /* Crisp dark color for headers */
-}
 
