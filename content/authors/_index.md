@@ -2,13 +2,6 @@
 # Display name
 title: Dr. Suzan Alkhodair, MBBS
 
-# Username (this must remain "admin")
-authors:
-  - admin
-
-# Is this user an author of the site?
-superuser: true
-
 # Role/position
 role: Board-Certified Editor in the Life Sciences (BELS)
 
@@ -36,7 +29,7 @@ education:
       institution: Board of Editors in the Life Sciences
       year: 2024
     - course: Bachelor of Medicine, Bachelor of Surgery (MBBS)
-      institution: Medical College
+      institution: King Saud University
       year: 2019
 
 # High-level tags
