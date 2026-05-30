@@ -7,9 +7,9 @@ sections:
   - block: about.biography
     id: about
     content:
-      username: admin
+      username: .
   - block: contact
     id: contact
     content:
-      username: admin
+      username: .
 ---
