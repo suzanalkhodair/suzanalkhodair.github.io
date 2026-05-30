@@ -1,45 +1,26 @@
 ---
-# Display name
-title: Dr. Suzan Alkhodair, MBBS
+# Your display name
+title: Your Name, PhD
 
-# Role/position
-role: Board-Certified Editor in the Life Sciences (BELS)
+# This matches the folder/username definition your site expects
+authors:
+  - authors
 
-# Organizations/Affiliations
+# Your professional details
+role: Professor of Computer Science
 organizations:
-  - name: Medical Editing & Translation Services
-    url: ''
+  - name: Example University
+    url: https://example.edu
 
-# Bio strip (appears below name)
-bio: My expertise lies at the intersection of clinical practice and precise academic publishing.
-
-# Social/Academic Networking Links
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:contact@suzanalkhodair.com'
-  - icon: linkedin
+# Social and Academic links
+profiles:
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://google.com
+  - icon: github
     icon_pack: fab
-    link: 'https://linkedin.com'
-
-# List your clinical or academic training here
-education:
-  courses:
-    - course: Board-Certified Editor (ELS)
-      institution: Board of Editors in the Life Sciences
-      year: 2024
-    - course: Bachelor of Medicine, Bachelor of Surgery (MBBS)
-      institution: King Saud University
-      year: 2019
-
-# High-level tags
-skills:
-  - name: Substantive Medical Editing
-  - name: AMA Manual of Style
-  - name: English-Arabic Translation
-  - name: Manuscript Proofreading
+    link: https://github.com/
 ---
 
-I am a board-certified Medical Editor (BELS) with a comprehensive clinical background (MBBS). I specialize in proofreading, structural editing, and professional English-Arabic translation for medical manuscripts, clinical trial protocols, and healthcare research papers. 
-
-My background allows me to understand the underlying science of your research, ensuring your data is communicated with absolute clarity, precision, and alignment with top-tier international journal standards.
+Write your short personal biography or introductory sentence right here. 
+This text will print directly next to or below your profile avatar image.
