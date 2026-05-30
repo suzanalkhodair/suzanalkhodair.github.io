@@ -4,7 +4,7 @@ date: 2026-05-29
 type: landing
 
 sections:
-  - block: about.avatar
+  - block: about.biography
     id: about
     content:
       username: admin
