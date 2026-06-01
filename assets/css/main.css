@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		/* High contrast dark text color for legibility over images */
-  color: #666666; 
+  color: #333333; 
   
   /* 1. The Color Overlay & 2. The Image Link combined */
   background-image: 
@@ -135,7 +135,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
-		font-weight: 300;
+		font-weight: 350;
 		line-height: 1.65;
 	}
 
