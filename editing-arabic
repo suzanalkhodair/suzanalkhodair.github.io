@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="ar" dir="rtl">
 	<head>
 		<title>editing - sk-ed.net</title>
 		<meta charset="utf-8" />
@@ -41,27 +41,41 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<dt>Copyright</dt>
-							<dd>&copy; 2026 Suzan Alkhodair. All rights reserved.</dd>
-						</section>
-						<section>
-							<h2>Contact</h2>
-							<dl class="alt">								
-								<dt>Phone</dt>
-								<dd>(966)55-654-5148</dd>
-								<dt>Time</dt>
-								<dd>UTC+3</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:suzanalkhodair@gmail.com">suzanalkhodair@gmail.com</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://x.com/docsu1970" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/docsu1970/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.youtube.com/@suzanalkhodairmedicaledito6177" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-							    <li><a href="https://iwtsp.com/966556545148" class="icon brands fa-whatsapp"></a></li>	
-                            </ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+    <dt>حقوق النشر</dt>
+    <dd>&copy; ٢٠٢٦ سوزان الخضير. جميع الحقوق محفوظة.</dd>
+</section>
+<section>
+    <h2>معلومات التواصل</h2>
+    <dl class="alt" style="direction: rtl; text-align: right; margin: 0; padding: 0;">								
+        
+        <!-- Row 1: Phone -->
+        <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 15px;">
+            <dt style="font-weight: bold; min-width: 120px; margin: 0;">الهاتف:</dt>
+            <dd dir="ltr" style="margin: 0; padding: 0;">55-654-5148 (966)</dd>
+        </div>
+        
+        <!-- Row 2: Time -->
+        <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 15px;">
+            <dt style="font-weight: bold; min-width: 120px; margin: 0;">التوقيت:</dt>
+            <dd style="margin: 0; padding: 0;">غرينتش +٣ (توقيت مكة المكرمة)</dd>
+        </div>
+        
+        <!-- Row 3: Email -->
+        <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 15px;">
+            <dt style="font-weight: bold; min-width: 120px; margin: 0;">البريد الإلكتروني:</dt>
+            <dd style="margin: 0; padding: 0;"><a href="mailto:suzanalkhodair@gmail.com">suzanalkhodair@gmail.com</a></dd>
+        </div>
+        
+    </dl>
+
+    <ul class="icons">
+        <li><a href="https://x.com/docsu1970" class="icon brands fa-twitter"><span class="label">تويتر</span></a></li>
+        <li><a href="https://www.linkedin.com/in/docsu1970/" class="icon brands fa-linkedin"><span class="label">لينكد إن</span></a></li>
+        <li><a href="https://www.youtube.com/@suzanalkhodairmedicaledito6177" class="icon brands fa-youtube"><span class="label">يوتيوب</span></a></li>
+        <li><a href="https://iwtsp.com/966556545148" class="icon brands fa-whatsapp"><span class="label">واتساب</span></a></li>		
+    </ul>
+</section>
+<p class="copyright">&copy; جميع الحقوق محفوظة. تصميم: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
