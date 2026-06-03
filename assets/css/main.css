@@ -3846,3 +3846,11 @@ input, select, textarea {
     color: #999999;
     font-size: 14px;
   }
+
+/* This targets lists only when they are inside your Arabic body class */
+.arabic-page dl, 
+.arabic-page dt, 
+.arabic-page dd {
+    direction: rtl;
+    text-align: right;
+}
