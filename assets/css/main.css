@@ -3854,3 +3854,9 @@ input, select, textarea {
     direction: rtl;
     text-align: right;
 }
+.two-column-list {
+  column-count: 2;       /* Splits the list into 2 columns */
+  column-gap: 20px;      /* Adds space between the columns */
+  list-style-position: inside; /* Prevents bullets from getting cut off */
+  padding: 0;
+}
