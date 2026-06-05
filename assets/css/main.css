@@ -3342,9 +3342,9 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #eae4e2;
-		color: #636363;
-		border-radius: 0.25em;
+		background-color: #f4ebd0;
+		color: #4a3b2c;
+		border: 1px solid #dcd1b4;
 	}
 
 		#main input, #main select, #main textarea {
