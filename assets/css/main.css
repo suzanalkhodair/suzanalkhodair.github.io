@@ -104,7 +104,7 @@ input, select, textarea {
   
   /* 1. The Color Overlay & 2. The Image Link combined */
   background-image: 
-    linear-gradient(rgba(185, 178, 172, 0.5), rgba(210, 204, 198, 0.45)), 
+    linear-gradient(rgba(55, 35, 20, 0.75), rgba(90, 65, 45, 0.65)), 
     url("images/journal3.png");
     
   /* Keeps the background perfectly centered, scaled, and fixed while scrolling */
