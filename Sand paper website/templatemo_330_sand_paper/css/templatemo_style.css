@@ -227,7 +227,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
     
     /* Light Medical Bluish-Gray color using RGBA (Red, Green, Blue, Alpha/Opacity) */
     /* 0.35 means 35% color opacity, allowing the photo underneath to show through beautifully */
-    background: linear-gradient(90deg, rgba(91, 179, 237, 0) 0%, rgba(50, 78, 99, 0.573) 100%);
+    background: linear-gradient(90deg, rgba(211, 232, 247, 0) 0%, rgba(66, 159, 230, 0.573) 100%);
     
     z-index: 2; /* Forces the color tint to sit ON TOP of the image */
     pointer-events: none; /* Allows clicks to pass through if you add a link later */
