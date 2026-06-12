@@ -296,12 +296,7 @@
                                                     
                             <input type="submit" value="Send" id="submit" name="submit" class="submit_btn float_l" />
                             <input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />
-                            
-                    </form> 
-					<div id="confirmationMessage" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
-  Thank you! Your form has been submitted successfully.
-</div>
-                
+                                        
                 </div> 
             </div>
             
@@ -324,18 +319,6 @@
         
 	</div>
 </div> <!-- end of wrapper -->
-	<script>
-  document.getElementById('myForm').addEventListener('submit', function(event) {
-    // 1. Prevent the default page reload
-    event.preventDefault(); 
-    
-    // 2. Hide the form
-    this.style.display = 'none'; 
-    
-    // 3. Show the confirmation message
-    document.getElementById('confirmationMessage').style.display = 'block';
-  });
-</script>
-
+	
 </body>
 </html>
