@@ -1,441 +1,239 @@
-/*
-Sand Paper Template 
-http://www.templatemo.com/preview/templatemo_330_sand_paper
-*/
+/* --- GLOBAL RESET & TYPOGRAPHY --- */
+* {
+    box-sizing: border-box;
+}
+
+html, body, p, span, li, label, input, textarea, button {
+    font-family: 'Calibri', 'Candara', 'Segoe UI', sans-serif;
+    font-size: 19px;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+    color: #222222;
+}
 
 body {
-	margin: 0;
-	padding: 0;
-	color: #222;
-	font-family: 'Calibri', sans-serif;
-	font-size: 17px;
-	line-height: 1.5em; 
-	letter-spacing: 0.01em;
-	background-color: linear gradient;
-	background-image: linear-gradient(to bottom, #f9f9f9, #f2eded);
-	overflow-x: hidden;
-	
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-a, a:link, a:visited { 
-	color: #000; 
-	font-weight: 400; 
-	text-decoration: underline; 
+/* --- HEADER AND NAVIGATION (Top Left / Top Right) --- */
+.site-header {
+    display: flex;
+    justify-content: space-between; /* Pushes heading left and menu right */
+    align-items: center;
+    max-width: 900px;
+    width: 90%;
+    margin: 10px auto; /* Centers the header bar on the screen */
 }
 
-a:hover { 
-	text-decoration: none; 
+.logo-heading {
+    font-family: 'Nunito', calibri, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
 }
 
-a.gototop { 
-	display: block; 
-	clear: both; 
-	color: #333; 
-	font-weight: 600; 
-	text-decoration: none; 
-	padding: 5px 0 5px 7px; 
-	float: right; 
-	width: 68px; 
-	height: 20px; 
-	margin-right: -45px; 
-	background: url(../images/templatemo_gototop.png) no-repeat; 
-}
-
-a.gototop:hover { 
-	color: #000; 
-}
-
-p { margin: 0 0 10px 0; padding: 0; }
-img { border: none; }
-blockquote { font-style: italic; margin: 0 0 0 10px;}
-cite { font-weight: bold; color:#333; }
-cite span { color: #333; }
-em { color: #333; font-weight: 400 }
-
-h1, h2, h3, h4, h5, h6 { 
-	color: #333; 
-	font-weight: normal;  
-}
-
-h1 { 
-	font-size: 30px; 
-	margin: 0 0 20px; 
-	padding: 5px 0; 
-}
-
-h2 { 
-	font-size: 28px; 
-	margin: 0 0 20px; 
-	padding: 5px 0 10px 0; 
-	font-weight: 450; 
-	
-}
-
-h3 { font-size: 20px; margin: 0 0 15px; padding: 0; }
-h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
-h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
-h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
-
-.cleaner { clear: both }
-.h10 { height: 10px }
-.h20 { height: 20px }
-.h30 { height: 30px }
-.h40 { height: 40px }
-.h50 { height: 50px }
-.h60 { height: 60px }
-.h70 { height: 70px }
-.h80 { height: 80px }
-
-
-.float_l { float: left }
-.float_r { float: right }
-
-.image_wrapper { 
-	display: inline-block; 
-	position: relative; 
-	margin: 3px 0 10px 0; 
-	padding: 4px; 
-	background: #fff; 
-}
-
-.image_fl { 
-	float: left; 
-	margin: 3px 20px 0 0; 
-}
-.image_fr { 
-	float: right; 
-	margin: 3px 0 0 20px; 
-}
-
-.templatemo_list { 
-	margin: 20px 0 20px 10px; 
-	padding: 0; 
-	list-style: none; 
-}
-
-.templatemo_list li { 
-	color:#333; 
-	margin: 0; 
-	padding: 0 0 5px 25px; 
-	background: url(../images/templatemo_list.png) no-repeat scroll 0 4px;  
-}
-
-.templatemo_list li a { 
-	color: #333; 
-	font-weight: normal; 
-	font-size: 12px; 
-	text-decoration: none; 
-}
-
-.templatemo_list li a:hover { 
-	color: #000; 
-	text-decoration: underline; 
-}
-
-#templatemo_wrapper {
-	width: 800px;
-	margin: 0 auto;
-	
-}
-
-#templatemo_header {
-	width: 780px;
-	height: 80px;
-	padding: 40px 10px 0 10px;
-	
-}
-
-#site_title { 
-	float: left; 
-	margin-left: 35px; 
-}
-
-#site_title h1 {
-	margin: 0; 
-	padding: 0; 
-}
-
-/* 1. Import the Niconne font from Google Fonts */
-@import url('https://googleapis.com');
-
-
-#site_title h1 a { 
-	display: block; 
-	color: #0b0b0b; 
-	font-weight: 450; 
-	outline: none; 
-	text-indent: 0; 
-
-	font-family: 'Calibri', Georgia, serif;
-
-	font-size: 30px; 
-	line-height: 1.2; 
-	white-space: nowrap; 
-
-	width: max-content; 
-	height: auto; 
-
-	/* 1. Remove the link underline */
-	text-decoration: none; 
-	margin-top: -35px;
-	margin-left: 0px;
-
-
-}
-
-/* 1. Logo Container Styles */
-#site_logo_container {
-    position: relative; 
-    padding: 20px 0 10px 20px;
-}
-
-.logo_link {
-    display: inline-block;
+.top-menu a {
+    font-family: 'Nunito', Calibri, sans-serif;
     text-decoration: none;
+    color: #171717;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.2s ease;
 }
 
-.site_logo {
-    display: block;
-    height: 50px;       
-    width: auto;        
+.top-menu a:hover {
+    color: #111111;
 }
 
-.site_subtitle {
-    margin: 8px 0 0 0;  
-    color: #555555; 
-    font-family: 'Calibri', Georgia, serif;
-    font-size: 16px;    
-    font-weight: 400;
-    line-height: 1.2;
+/* --- STRETCHED BANNER IMAGE CONTAINER --- */
+.banner-container {
+    position: relative;     /* Locks absolute children to *only* this box */
+    width: 100%;            /* Spans edge-to-edge */
+    height: 150px;          /* Enforces your strict height requirement */
+    overflow: hidden;       /* Instantly cuts off any visual leak */
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: block;         /* Ensures it clears headers cleanly */
 }
 
-/* 2. Breakout Full-Width Banner Styles */
-.full_bleed_banner_wrapper {
-    width: 100%;
-    height: 150px;       /* 1. Holds a solid 150px space in the page flow */
-    margin-top: 40px;    /* Gap between subtitle and banner */
-    margin-bottom: 40px; /* 2. Pushes the next div section down safely */
-    position: relative; 
-    clear: both;
-}
-/* NEW: The Medical Bluish-Gray Color Overlay layer */
-.full_bleed_banner_wrapper::after {
-    content: '';
+/* This creates the overlay safely inside the container borders */
+.banner-container::after {
+    content: "";
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw; /* Matches the exact width of your screen breakout image */
-    height: 150px;
-    
-    /* Light Medical Bluish-Gray color using RGBA (Red, Green, Blue, Alpha/Opacity) */
-    /* 0.35 means 35% color opacity, allowing the photo underneath to show through beautifully */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;             /* Layered directly over the image */
     background: linear-gradient(90deg, rgba(211, 232, 247, 0) 0%, rgba(66, 159, 230, 0.573) 100%);
+    pointer-events: none;   /* Avoids mouse interaction blocking */
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;           /* Targets 100% of the parent box height */
+    object-fit: cover;
+    display: block;         /* Eliminates inline browser white-space gaps */
+    position: relative;
+    z-index: 1;             /* Layered below the overlay */
+}
+
+
+/* --- FRAMELESS MAIN CONTENT WRAPPER --- */
+.content-wrapper {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto 40px auto; /* Centers your core textual layout */
+}
+
+/* --- HEADINGS --- */
+h1 {
+    font-family: 'Nunito', Calibri, sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Nunito', Calibri, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 30;
+    margin-bottom: 0px;
+
+}
+
+/* --- CUSTOM BULLET LIST STYLING --- */
+ul.custom-bullets {
+    list-style: none;      /* Removes the default black browser dots */
+    padding-left: 30px;    /* FIXED: Added 'px' unit so it works */
+    margin: 15px 0;
+
+    /* --- ADD THESE NEW LINES FOR TWO COLUMNS --- */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Splits list into 2 equal columns */
+    gap: 5px;                             /* Adds spacing between columns and rows */
+}
+
+ul.custom-bullets li {
+    position: relative;
+    /* Creates a 30px indentation on the left to make room for your image */
+    padding-left: 20px;    
+    margin-bottom: 5px;   /* Adds comfortable space between list items */
+}
+
+ul.custom-bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    /* Adjust this value to perfectly align the image with the middle of your text line */
+    top: 11px;              
     
-    z-index: 2; /* Forces the color tint to sit ON TOP of the image */
-    pointer-events: none; /* Allows clicks to pass through if you add a link later */
+    /* Set your custom bullet size here */
+    width: 8px;           
+    height: 8px;          
+    
+    /* Link your image file path here */
+    background-image: url('images/dot.png'); 
+    background-size: contain;   /* Scales the image smoothly inside the box */
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.full_width_banner {
-    position: absolute;   /* 3. Takes it out of the container layout flow */
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); /* 4. Centers the screen-wide image */
-    width: 100vw;         /* Forces it to stretch across the entire screen */
-    height: 150px;        /* Matches the exact wrapper height */
-    object-fit: cover;    /* Crops the excess of your 400px image automatically */
-    object-position: center; 
+
+
+/* --- FORM STRUCTURE --- */
+form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+label {
+    font-family: 'Nunito', Calibri, sans-serif;
+    font-weight: 500;
     display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
 }
 
-
-
-/* menu */
-
-#templatemo_menu { 
-	float: right; 
-	margin-top: -35px; 
-	width: 400px; 
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Calibri', sans-serif;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 18px;
 }
 
-#templatemo_menu ul { 
-	padding: 9px 0 0; 
-	margin: 0; 
-	list-style: none; 
+textarea {
+    resize: vertical;
+    min-height: 150px;
 }
 
-#templatemo_menu ul li { 
-	margin: 0; 
-	padding: 0; 
+/* --- BUTTONS --- */
+.btn-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-#templatemo_menu ul li a {
-	float: left;
-	display: block;
-	width: 80px;
-	height: 26px;
-	font-size: 14px;
-	color: #000;	
-	text-align: center;
-	text-decoration: none;
-	font-weight: 400;
-	outline: none;
+.submit-btn {
+    background-color: #0690ba;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
 
-#templatemo_menu ul li a:hover, #templatemo_menu ul .current {
-	color: #fff;
-	padding-top: 3px;
-	height: 23px;
-	background: url(../images/templatemo_menu_hover.png) no-repeat;
+.submit-btn:hover {
+    background-color: #06baba;
 }
 
-/* end of menu */
-
-#templatemo_main {
-	clear: both;
-	width: 800px;
-	padding: 0;
+.reset-btn {
+    background-color: transparent;
+    color: #666666;
+    border: 1px solid #cccccc;
+    padding: 12px 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.clear_banner {
-    display: block !important;
-    position: relative !important;
-    clear: both !important;       /* Forces this div to sit strictly beneath the banner */
-    float: none !important; 
+.reset-btn:hover {
+    background-color: #f5f5f5;
+    color: #222222;
 }
 
-.content_box_top { 
-	max-width: 850px; 
-	height: 0px; 
-	
-	margin-top:100px !important;
-}
-
-.content_box_bottom { 
-	width: 850px; 
-	height: 0px; 
-	
-	
-}
-
-.content_box {
-	
-	clear: both;
-	max-width: 900px;
-	width: 90%;
-	padding: 50px 50px 0;
-	marginL 0 auto;
-	
-}
-
-.col_w320 { width: 340px }
-.col_w220 { width: 220px; float: left; }
-.col_mr30 { margin-right: 30px }
-
-.post_box { 
-	width: 320px; 
-	margin-bottom: 30px; 
-	padding-bottom: 20px;  
-}
-
-.post_header { 
-	border-top: 3px solid #999; 
-	border-bottom: 1px solid #ccc; 
-	padding: 5px; 
-	margin-bottom: 20px; 
-}
-
-.post_box h3 { 
-	font-size: 24px; 
-	line-height: 34px; 
-	margin-bottom: 15px; 
-}
-
-.post_box p.post_meta { 
-	font-size: 10px; 
-	margin-bottom: 0; 
-	padding-bottom: 0; 
-}
-
-#gallery { 
-	margin: 0; 
-	padding: 0; 
-}
-
-#gallery ul { 
-	margin: 0; 
-	padding: 0;
-}
-
-#gallery ul li { 
-	display: block; 
-	position: relative; 
-	float: left; 
-	width: 300px; 
-	height: 150px; 
-	padding: 6px; 
-	background: #fff; 
-	margin: 0 30px 30px 0; 
-}
-
-#gallery ul li a img { 
-	width: 300px; 
-	height: 150px; 
-	border: 1px solid #ccc; 
-}
-
-#contact_form { 
-	padding: 0; 
-	width: 300px; 
-}
-
-#contact_form form { 
-	margin: 0px; 
-	padding: 0px; 
-}
-
-#contact_form form .input_field { 
-	width: 290px; 
-	padding: 5px; 
-	color: #333; 
-	border: 1px solid #ccc;  
-	background: #fff;
-	font-family: 'Noto Sans', sans-serif;
-	font-size: 12px;
-	margin-top: 5px; 
-}
-
-#contact_form form label { 
-	display: block; 
-	width: 100px; 
-	margin-right: 10px; 
-	font-size: 14px; 
-}
-
-#contact_form form textarea { 
-	width: 288px; 
-	height: 150px; 
-	padding: 5px; 
-	color: #333; 
-	border: 1px solid #ccc;  
-	background: #fff; 
-	font-family: 'Noto Sans', sans-serif;
-	font-size: 12px;
-	margin-top: 5px; 
-}
-
-#contact_form form .submit_btn {
-	margin: 10px 0px;
-	padding: 5px 14px;
-	border: 1px solid #ccc;  
-	background: #fff; 
-	font-size: 14px; 
-}
-
-#templatemo_footer {
-	clear: both;
-	width: 760px;
-	padding: 0 20px 20px;
-	text-align: center;
-	color: #000;
-	background: url(../images/templatemo_footer.jpg) center top no-repeat;
+/* --- RESPONSIVE MOBILE LAYOUT --- */
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column; /* Stacks header heading over menu on tiny mobile viewports */
+        gap: 10px;
+        text-align: center;
+    }
+    .top-menu a {
+        margin: 0 10px; /* Even spacing for navigation elements when stacked */
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .btn-container {
+        flex-direction: column;
+    }
+    .submit-btn, .reset-btn {
+        width: 100%;
+    }
 }
