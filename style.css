@@ -17,14 +17,15 @@ body {
     background-color: #ffffff;
 }
 
-/* --- HEADER AND NAVIGATION (Top Left / Top Right) --- */
+/* --- HEADER AND NAVIGATION (Stacked Layout) --- */
 .site-header {
     display: flex;
-    justify-content: space-between; /* Pushes heading left and menu right */
-    align-items: center;
+    flex-direction: column;   /* Stacks the logo and menu vertically */
+    align-items: stretch;  /* Aligns both the logo and menu to the left */
+    gap: 15px;                /* Controls the exact vertical space between logo and menu */
     max-width: 900px;
     width: 90%;
-    margin: 10px auto; /* Centers the header bar on the screen */
+    margin: 10px auto;        /* Centers the header bar on the screen */
 }
 
 .logo-heading {
@@ -32,6 +33,11 @@ body {
     font-size: 30px;
     font-weight: 500;
     color: #000;
+    align-self: flex-start;
+}
+
+.top-menu {
+    text-align: right;      
 }
 
 .top-menu a {
@@ -39,12 +45,13 @@ body {
     text-decoration: none;
     color: #171717;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 20px;        /* Spacing between the menu items */
+    display: inline-block; 
     transition: color 0.2s ease;
 }
 
 .top-menu a:hover {
-    color: #111111;
+    color: #06baba;
 }
 
 /* --- STRETCHED BANNER IMAGE CONTAINER --- */
@@ -53,7 +60,7 @@ body {
     width: 100%;            /* Spans edge-to-edge */
     height: 150px;          /* Enforces your strict height requirement */
     overflow: hidden;       /* Instantly cuts off any visual leak */
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 40px;
     display: block;         /* Ensures it clears headers cleanly */
 }
@@ -198,6 +205,56 @@ html {
 .back-to-top-btn:hover {
   background-color: #06baba;
   transform: translateY(-3px);
+}
+
+/* --- TESTIMONIAL BLOCK --- */
+.testimonial-block {
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;          /* Centers the block and adds vertical space */
+    padding: 30px;
+    background-color: #f9f9f9;  /* Light gray background to break up the page */
+    border-left: 4px solid #0690ba; /* Teal accent bar on the left side */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.testimonial-quote {
+    font-family: 'Nunito', calibri, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #171717;
+    line-height: 1.6;
+    margin: 0 0 20px 0;         /* Spacing below the quote text */
+}
+
+.testimonial-author {
+    font-family: 'Nunito', calibri, sans-serif;
+    display: flex;
+    flex-direction: column;     /* Stacks the name and the title vertically */
+    gap: 4px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.author-title {
+    font-size: 14px;
+    color: #666;                /* Muted text color for the company/title */
+}
+
+/* --- INVERSE TESTIMONIAL (Flipped Layout) --- */
+.testimonial-block.testimonial-inverse {
+    border-left: none;               /* Removes the left accent bar */
+    border-right: 4px solid #06baba; /* Adds the teal accent bar to the right side instead */
+    text-align: right;               /* Flips all text inside the block to align right */
+}
+
+.testimonial-inverse .testimonial-author {
+    align-items: flex-end;           /* Ensures author name and title align to the right edge */
 }
 
 
