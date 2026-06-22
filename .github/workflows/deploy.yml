@@ -1,0 +1,42 @@
+name: Secure Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # ⚠️ Change this to "master" if your default GitHub branch is named master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Inject Secret Key into HTML
+        run: |
+          # Finds your placeholder token and swaps it with your hidden secret key
+          sed -i 's/YOUR_WEB3FORMS_KEY/${{ secrets.WEB3FORMS_KEY }}/g' index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
