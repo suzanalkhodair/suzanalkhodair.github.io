@@ -222,6 +222,23 @@ ul.custom-bullets li::before {
     background-position: center;
 }
 
+/* READ MORE ARROW */
+.read-more-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px; /* Adjusts spacing below the main text */
+}
+
+.read-more {
+  text-decoration: none;
+  color: #0066cc; /* Change to your preferred link color */
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
 /* IMAGE FLOAT RIGHT */
 .float_right_img {
   float: right;
