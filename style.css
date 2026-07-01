@@ -447,6 +447,58 @@ textarea {
     box-shadow: 0 4px 12px rgba(6, 186, 186, 0.25); /* Subtle blue depth shadow */
 }
 
+.db-search-box {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.db-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.db-table th, .db-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.db-table th {
+    background-color: #f2f2f2;
+}
+.db-table tr:hover {
+    background-color: #f5f5f5;
+}
+.db-header-ar {
+    text-align: right;
+}
+.db-arabic-col {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.db-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.db-pagination button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.db-pagination button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+.db-page-info {
+    font-size: 14px;
+}
 
 
 /* --- RESPONSIVE MOBILE LAYOUT --- */
