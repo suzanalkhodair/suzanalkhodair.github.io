@@ -129,7 +129,7 @@ body {
     z-index: 3;             /* Places it safely above the image and gradient overlay */
     margin: 0;
     font-family: 'Nunito', calibri, sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     color: #000;            /* Keeps your original black color */
 }
